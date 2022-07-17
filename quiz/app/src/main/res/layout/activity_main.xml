@@ -14,7 +14,7 @@
         android:gravity="center"
         android:text="@string/result"
         android:textColor="@android:color/holo_green_light"
-        android:textSize="40sp" />
+        android:textSize="40dp" />
 
     <TextView
         android:id="@+id/question"
@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="350dp"
         android:text="@string/Question"
-        android:textSize="30sp" />
+        android:textSize="30dp" />
 
     <Button
         android:id="@+id/Q"
@@ -31,7 +31,7 @@
         android:layout_weight="1"
         android:onClick="onButton"
         android:text="_"
-        android:textSize="40sp"
+        android:textSize="40dp"
         tools:ignore="OnClick" />
 
     <Button
@@ -41,7 +41,7 @@
         android:layout_weight="1"
         android:onClick="onButton"
         android:text="_"
-        android:textSize="40sp"
+        android:textSize="40dp"
         tools:ignore="OnClick" />
 
     <Button
@@ -51,7 +51,7 @@
         android:layout_weight="1"
         android:onClick="onButton"
         android:text="_"
-        android:textSize="40sp"
+        android:textSize="40dp"
         tools:ignore="OnClick,UsingOnClickInXml" />
 
     <Button
@@ -61,7 +61,7 @@
         android:layout_weight="1"
         android:onClick="onButton"
         android:text="_"
-        android:textSize="40sp"
+        android:textSize="40dp"
         tools:ignore="OnClick" />
     <Button
         android:id="@+id/buttonnext"
