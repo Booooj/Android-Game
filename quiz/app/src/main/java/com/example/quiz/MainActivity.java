@@ -66,15 +66,15 @@ public class MainActivity extends AppCompatActivity {
         }
     }
     public void onNext(View view) {
-        i++;
-        show();
-        ((TextView) findViewById(R.id.textview)).setText("結果...");
-        Button buttonnext = findViewById(R.id.buttonnext);
-        buttonnext.setEnabled(false);
         if (i == 5) {
             Intent intent = new Intent(this, MainActivity2.class);
             startActivity(intent);
               finish();
         }
+        i++;
+        show();
+        ((TextView) findViewById(R.id.textview)).setText("結果...");
+        Button buttonnext = findViewById(R.id.buttonnext);
+        buttonnext.setEnabled(false);
     }
 }
