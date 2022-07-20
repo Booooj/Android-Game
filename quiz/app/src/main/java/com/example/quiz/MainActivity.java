@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     private Button buttonnext;
     String question[][] = {
             // {"動物名", "正解", "選択1", "選択2", "選択３"}
-            {"日本語訳はどれ？「raccoon」", "アライグマ", "リス", "イタチ", "アオダイショウ"},
+            {"「raccoon」", "アライグマ", "リス", "イタチ", "アオダイショウ"},
             {"hedgehog", "ハリネズミ", "モグラ", "キツツキ", "カラス"},
             {"camel", "ラクダ", "アマガエル", "アリ", "シマウマ"},
             {"donkey", "ロバ", "シカ", "キツネ", "ライオン"},
@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
     public void show() {
         List<Integer> q = Arrays.asList(1, 2, 3, 4);
         Collections.shuffle(q);
-        ((TextView) findViewById(R.id.question)).setText(question[i][0]);
+        ((TextView) findViewById(R.id.question)).setText("日本語訳はどれ？"+question[i][0]question[i][0]);
         ((Button) findViewById(R.id.Q)).setText(question[i][q.get(0)]);
         ((Button) findViewById(R.id.select1)).setText(question[i][q.get(1)]);
         ((Button) findViewById(R.id.select2)).setText(question[i][q.get(2)]);
