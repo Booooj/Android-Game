@@ -39,7 +39,10 @@ public class MainActivity extends AppCompatActivity {
         Button buttonnext = findViewById(R.id.buttonnext);
         buttonnext.setEnabled(false);
     }
-
+ @Override
+    public void onBackPressed(){
+                    finish();
+    }
     public void show() {
         List<Integer> q = Arrays.asList(1, 2, 3, 4);
         Collections.shuffle(q);
@@ -66,10 +69,12 @@ public class MainActivity extends AppCompatActivity {
         i++;
         show();
         ((TextView) findViewById(R.id.textview)).setText("結果...");
+        Button buttonnext = findViewById(R.id.buttonnext);
         buttonnext.setEnabled(false);
         if (i == 5) {
             Intent intent = new Intent(this, MainActivity2.class);
             startActivity(intent);
+              finish();
         }
     }
 }
