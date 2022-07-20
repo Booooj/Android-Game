@@ -67,9 +67,9 @@ public class MainActivity extends AppCompatActivity {
     }
     public void onNext(View view) {
         if (i == 5) {
+            finish();
             Intent intent = new Intent(this, MainActivity2.class);
             startActivity(intent);
-              finish();
         }
         i++;
         show();
